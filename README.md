@@ -9,6 +9,7 @@ The `Database` class manages a collection of tables, each represented by the `Ta
 ### Commands
 
 It supports basic database commands such as creating a database (`createDatabase`), using a database (`useDatabase`), creating a table (`createTable`), inserting records (`insertIntoTable`), selecting records (`select`), and dropping tables (`dropTable`).
+It also supports some commands such as selecting records with WHERE clause or INNER JOIN clause.
 
 ### File Operations
 
@@ -22,17 +23,11 @@ Databases can be saved to and loaded from files, ensuring persistence across ses
 
 Implements core functionalities of the `MiniDB` class, such as creating databases, using databases, creating tables, inserting records, selecting records, and saving/loading the database to/from files.
 
-### query_executor.cpp
-
-Failed to retrieve the file content.
 
 ### main.cpp
 
 Entry point for the application. It reads SQL commands from an input file, processes them using the `MiniDB` instance, and writes the output to a CSV file.
 
-### query_executor.hpp
-
-Failed to retrieve the file content.
 
 ### data_manager.hpp
 
@@ -45,3 +40,11 @@ Implements the `trim` function used to remove whitespace from the beginning and 
 ### removespace.hpp
 
 Declares the `trim` function used to remove whitespace from the beginning and end of a string.
+
+---
+
+### useage
+
+The dictionary src includes the files end with (.cpp and .hpp)
+The dictionary bin includes the files that can execute.
+test0 and test1 are two test files.
